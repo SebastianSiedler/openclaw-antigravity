@@ -56,8 +56,8 @@ export function antigravitySystemPromptContribution(ctx) {
 }
 
 const execFileAsync = promisify(execFile);
-const COMMAND_TIMEOUT_MS = 15_000;
-const LIVE_MODEL_CACHE_MS = 60_000;
+const COMMAND_TIMEOUT_MS = 45_000;
+const LIVE_MODEL_CACHE_MS = 3_600_000;
 const COMMAND_MAX_BUFFER_BYTES = 1_048_576;
 const MINIMUM_TOOL_FREE_AGY_VERSION = [1, 2, 1];
 const TOOL_FREE_SETUP_PLUGIN_ROOT = join(
